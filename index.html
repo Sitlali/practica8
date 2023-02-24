@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta http‐equiv="refresh" content="20;URL=./2PantillaBasica.htm" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divisones Sem&aacute;ticas</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" >
+  <link rel="stylesheet" type="text/css" href="css/estiloBasico.css">
+  <style>
+   article{
+margin: 0px;
+padding: 0px;
+}
+h1 {
+font: bold 20px verdana, sans-serif;
+} h2 {
+font: bold 14px verdana, sans-serif;
+}
+
+/*para asegurarnos de que serán tratados como regularmente
+se hace con elementos <div> y de este modo construir
+el modelo de caja*/
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup{
+display: block;
+}
+/*Centrando el cuerpo*/
+body {
+text-align: center;
+/*background-image: url("paper.gif");*/
+/*background-color: lightblue;*/
+}
+/*Definiendo las propiedades de la caja principal*/
+#agrupar {
+width: 960px;
+margin: 15px auto;
+text-align: left;
+}
+/* Agregando estilos para <header>.*/
+#cabecera {
+background: #FFFBB9;
+border: 1px solid #999999;
+padding: 20px;
+
+}
+/*Agregando estilos para <nav>.*/
+#menu {
+background: #CCCCCC;
+padding: 5px 15px;
+}
+#menu li {
+display: inline-block;
+list-style: none; /*list-style: square inside url("sqpurple.gif");*/
+padding: 5px;
+font: bold 14px verdana, sans-serif;
+}
+/*Section y aside*/
+/*La propiedad flotante especifica cómo debe flotar un elemento.
+Nota: ¡Los elementos absolutamente posicionados ignoran
+la propiedad de flotación!
+Nota: los elementos después de un elemento flotante fluirán a su alrededor.
+Para evitar esto, use la propiedad clear o el clearfix hack
+*/
+#seccion {
+float: right;
+width: 660px;
+margin: 20px;
+}
+
+#columna {
+float: left;
+width: 220px;
+height: 1600px;
+margin: 20px 0px;
+padding: 20px;
+background: #cccccc;
+}
+/*Footer*/
+#pie {
+clear: both;/* No permita elementos flotantes en el lado izquierdo
+                o derecho de un elemento <p> especificado:*/
+text-align: center;
+padding: 20px;
+border-top: 2px solid #999999;
+}
+/*imagenes*/
+#imagen{
+  width: 20%;
+  height: 20%;
+}
+
+#imagen2{
+  width: 15%;
+  height: 10%;
+}
+
+/*Agregando los últimos toques a nuestro diseño básico.*/
+article {
+background: #FFFBCC;
+border: 1px solid #999999;
+padding: 20px;
+margin-bottom: 15px;
+}
+
+article footer {
+text-align: right;
+}
+
+img{
+  width: 30%;
+  height: 35%;
+}
+
+time {
+color: #999999;
+}
+
+figcaption {
+font: italic 14px verdana, sans-serif;
+}
+  </style>
+</head>
+<body>
+  <div id="agrupar">
+
+  <header id="cabecera">
+      <h1 style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">Practica 8</h1>
+  </header>
+
+  <nav id="menu">
+    <ul>
+    <li><a href="https://sitlali.github.io/Practica-1/">Practica 1</a></li>
+    <li><a href="https://sitlali.github.io/practica2/">Practica 2</a></li>
+    <li><a href="https://sitlali.github.io/practica3/">Practica 3</a></li>
+    <li><a href="https://sitlali.github.io/practica4/">Practica 4</a></li>
+
+    </ul>
+  </nav>
+
+  <section id="seccion">
+      <article><!--Primer articulo-->
+        <header>
+              <hgroup>
+             <h1
+                  style="color: black; font-family: cursive; font-size: 40px; text-align: center;"
+                  >Mi cv</h1>
+                  <h2>video</h2>
+                  <video src="media/cv.mp4" controls width="320px" height="240px">
+                   
+                 </video> 
+                  <h2 style=" font-family:  Arial,Helvetica, sans-serif;">Dirreci&oacute;n</h2>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1208.708655581763!2d-97.09401571392206!3d18.825590483881097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c4fd9603d08b39%3A0x7a6d3b4cf412f0a3!2sJalapilla%2C%20Ver.!5e0!3m2!1ses-419!2smx!4v1677199444374!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+           <form action="" method="get">               
+           <h2>Datos personales</h2>
+           <p>
+               <ul style="list-style-type:square">
+                   <li>Nombre completo: Zopiyactle Ixmatlahua Eduviges Sitlali</li>
+                   <li>Fecha de nacimiento: 08/06/2002</li>
+                   <li>Lugar de nacimiento: Orizaba</li>
+                   </ul><br></p>
+           
+           <h2>Formaci&oacute;n acad&eacute;mica</h2>
+           <p>
+               <ul style="list-style-type:square">
+                   <li>2017-2020 Escuela de Bachilleres Vespertina de Orizaba(EBVO)</li>
+                   <li>2014-2017 Secundaria general</li>
+                   <li>2020-2022 ITO</li>
+                   </ul>
+           <br></p>
+           
+           <h2>Experiencia laboral</h2> <p>
+               <ul style="list-style-type:square">
+                   <li>Recepcionista de una oficina</li>
+                   <li>Secretaria de un ayuntamiento</li>
+                   <li>trabaje un mes en un 7/24</li>
+                   </ul>
+              </hgroup>
+              
+      </article>
+
+      <article><!-- Segundo articulo-->
+            <hgroup>
+                <h1
+                style="color: darkgreen; font-family: cursive; font-size: 40px; text-align: center;"
+                >Mis materias preferidas</h1> 
+            </hgroup>
+        
+            <ol>
+             <li style="color: blueviolet;">Lenguajes de interfaz</li>
+             <li id="r">Redes de computadoras</li>
+             <li id="s">Software</li>
+             <li style="color: chartreuse;">Graficaci&oacute;n</li>
+             <li style="color: gold;">Base de datos </li>
+          
+    </article> <!-- Fin Segundo articulo-->
+
+</section> <!--Fin de section seccion-->
+
+  <aside id="columna"> <!-- aside -->
+      <blockquote>Enlaces para mayor informaci&oacute;n</blockquote>
+
+       <a href="https://www.facebook.com/sitlali.zopiyactle.5?mibextid=ZbWKwL" target="_blank"> Facebook personal
+        <figure>
+         <img src="media/facebook.png" alt="facebook" >
+       </figure> 
+     </a>
+
+     <a linkinin href="https://www.instagram.com/8.sitlali/?igshid=ZDdkNTZiNTM%3D" target="_blank"> Instagram personal
+        <figure>
+          <img src="media/Instagram.png" alt="instagram">
+        </figure>
+      </a>
+
+      <a linkinin href="https://www.linkedin.com/help/linkedin/answer/a507459/cargar-tu-curriculum-a-linkedin?lang=es" target="_blank">  LinkedIn
+        <figure>
+          <img src="media/im.png" alt="linkedin">
+        </figure>
+      </a>
+  </aside> <!-- Fin aside -->
+
+  <footer id="pie">
+      Derechos Reservados &copy; 2010-2011
+      <address>
+          <a href="http://www.itorizaba.edu.mx">ITO</a>
+      </address>
+  </footer>
+
+</div> <!--fin div agrupar-->
+
+</body>
+</html>
